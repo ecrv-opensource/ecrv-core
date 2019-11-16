@@ -11,43 +11,32 @@ package com.ecurve.core.exception;
 public class ParameterException extends BaseException {
   // --------------------------------------------------------------- Constants
   private static final long serialVersionUID = -6877293955093752027L;
+
   // --------------------------------------------------------- Class Variables
   // ----------------------------------------------------- Static Initializers
   // ------------------------------------------------------ Instance Variables
   // ------------------------------------------------------------ Constructors
   /**
    * Create a new <code>ParameterException</code>
-   */
-  public ParameterException() {
-    super();
-  }
-
-  /**
-   * Create a new <code>ParameterException</code>
    * 
-   * @param message
-   */
-  public ParameterException(String message) {
-    super(message);
-  }
-
-  /**
-   * Create a new <code>ParameterException</code>
-   * 
-   * @param cause
-   */
-  public ParameterException(Throwable cause) {
-    super(cause);
-  }
-
-  /**
-   * Create a new <code>ParameterException</code>
-   * 
+   * @param errorCode
    * @param message
    * @param cause
    */
-  public ParameterException(String message, Throwable cause) {
-    super(message, cause);
+  public ParameterException(String errorCode, String message, Throwable cause) {
+    super(errorCode, message, cause);
+    // TODO Auto-generated constructor stub
+  }
+
+  /**
+   * Create a new <code>ParameterException</code>
+   * 
+   * @param errorCode
+   * @param message
+   */
+  public ParameterException(String errorCode, String message) {
+    super(errorCode, message);
+    // TODO Auto-generated constructor stub
   }
   // ---------------------------------------------------------- Public Methods
   // ------------------------------------------------------- Protected Methods
